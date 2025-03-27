@@ -211,10 +211,10 @@ h1{
     z-index: 1;
 }
 .compra{
-    background-image:  linear-gradient(#0000,#000c, #0000), url(compra.jpeg);
+    background-image:  linear-gradient(#0000,#000c, #0000), url(./compra.jpeg);
 }
 .venta{
-    background-image:  linear-gradient(#0000,#000c, #0000), url(vende.jpeg);
+    background-image:  linear-gradient(#0000,#000c, #0000), url(./vende.jpeg);
 }
 .whatsapp-button {
     position: fixed;
