@@ -1,99 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>848_Cars</title>
-        <link rel="stylesheet" href="inicio.css" />
-    </head>
-    <body>
-        <header class="header">
-            <nav class="nav-bar">
-                <div class="header-container-logo">
-                    <img src="848.jpg" class="header-logo" />
-                </div>
-                <input type="checkbox" id="menu-burger" />
-                <label for="menu-burger" class="menu-icono">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </label>
-                <ul class="nav-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Compra</a></li>
-                    <li><a href="#">Venta</a></li>
-                    <li><a href="#">Seguro</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="presentacion" id="main">
-                <div class="presentacion-wrapper">
-                    <div class="presentacion-titulo">
-                        <h1>848 Cars Concesionaria</h1>
-                    </div>
-                    <div class="presentacion-2">
-                        <div class="presentacion-parrafo">
-                            <p>
-                                Bienvenido a 848 Cars, tu concesionaria de confianza para
-                                comprar y vender autos usados. Ofrecemos vehículos de calidad
-                                con un servicio personalizado, guiándote con transparencia y
-                                profesionalismo. Nuestro equipo está comprometido en hacer de tu
-                                experiencia algo sencillo y confiable. Contamos con asociacion directa con Heller Seguros para que cuentes con la mejor asesoria de seguros y estes siempre protegido ¡Déjanos acompañarte en
-                                tu próxima aventura sobre ruedas!
-                            </p>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>848_Cars</title>
+    <link rel="stylesheet" href="inicio.css" />
+    <!-- swiper -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="header-container-logo">
+          <img src="848.jpg" class="header-logo" />
+        </div>
+        <input type="checkbox" id="menu-burger" />
+        <label for="menu-burger" class="menu-icono">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Compra</a></li>
+          <li><a href="#">Venta</a></li>
+          <li><a href="#">Seguro</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="presentacion" id="main">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides  1 -->
+                <div class="swiper-slide">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-content-subtitle">Sucursal Moron</span>
+                        <h2 class="slide-content-title">8 4 8  C a r s</h2>
+                        <!-- <p class="slide-content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam at voluptas labore numquam quaerat unde, doloremque qui reprehenderit vero sapiente voluptates quos vel, ad minima tempora maxime et natus neque!</p> -->
+                        <div class="slide-content-butom">
+                            <a href="" class="button">Compra</a>
                         </div>
-                        <div class="presentacion-img-container">
-                            <img src="frente848.jpg" class="presentacion-img" />
+                    </div>
+                </div>
+                <div class="slide-bg">
+                    <img src="frente848.jpg" alt="slide-1">
+                </div>
+                </div>
+                <!-- Slides  2 -->
+                <div class="swiper-slide">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-content-subtitle">Marzo 2025</span>
+                        <h2 class="slide-content-title">848 Cars</h2>
+                        <div class="slide-content-butom">
+                            <a href="" class="button">Compra</a>
                         </div>
                     </div>
                 </div>
+                <div class="slide-bg">
+                    <img src="slide-2.jpg" alt="slide-1">
+                </div>
+                </div>
+                <!-- Slides  3 -->
+                <div class="swiper-slide">
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-content-subtitle">Marzo 2025</span>
+                        <h2 class="slide-content-title">848 Cars</h2>
+                        <div class="slide-content-butom">
+                            <a href="" class="button">Compra</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-bg">
+                    <img src="slide-3.png" alt="slide-1">
+                </div>
+                </div>
+        </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
         </main>
         <section class="seccion-accion">
-            <div class="seccion-accion-container">
-                <div class="seccion-accion-elem compra">
-                    <div class="pt">
-                        <h3 class="nombre-compra">Compra</h3>
-                        <p>tu proximo auto</p>
-                    </div>
-                </div>
-                <div class="seccion-accion-elem venta">
-                    <div class="p">
-                        <h3 class="nombre-venta">Vendé</h3>
-                        <p>tu usado</p>
-                    </div>
-                </div>
-            </div>
+      <div class="seccion-accion-container">
+        <div class="seccion-accion-elem compra">
+          <div class="pt">
+            <h3 class="nombre-compra">Compra</h3>
+            <p>tu proximo auto</p>
+          </div>
+        </div>
+        <div class="seccion-accion-elem venta">
+          <div class="p">
+            <h3 class="nombre-venta">Vendé</h3>
+            <p>tu usado</p>
+          </div>
+        </div>
+      </div>
         </section>
         <div class="button-whatsapp">
-            <a href="https://wa.me/1527496358" target="_blank" class="whatsapp-button">
-            <span class="whatsapp-text">Hola!, estamos en linea para ayudarte</span>
-            <img src="WhatsApp.png" alt="WhatsApp"></a>
+      <a
+        href="https://wa.me/1527496358"
+        target="_blank"
+        class="whatsapp-button"
+      >
+        <span class="whatsapp-text">Hola!, estamos en linea para ayudarte</span>
+        <img src="WhatsApp.png" alt="WhatsApp"
+      /></a>
         </div>
         <footer>
-            <div class="footer-container">
-                <div class="footer-left">
-                    <div class="footer-address">
-                        <div class="footer-direccion">
-                            <h4>Ubicacion:</h4><p>Moron</p><p>Tomas Guido 848</p>
-                        </div>
-                        <div class="footer-telefono">
-                            <h4>Teléfono:</h4><p>+54 9 11 3180-2792</p>
-                        </div>
-                        <div class="footer-horario">
-                            <h4>Horarios de atención:</h4><p>Lunes a Viernes de 8:00 - 18:00</p><p>Sabados 10:00 14:00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-social">
-                    <a href="#" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
-                    <a href="#" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
-                    <a href="#" target="_blank"><img src="Tik-Tok.png" alt="TikTok"></a>
-                </div>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-address">
+            <div class="footer-direccion">
+              <h4>Ubicacion:</h4>
+              <p>Moron</p>
+              <p>Tomas Guido 848</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 848 CARS. Todos los derechos reservados.</p>
+            <div class="footer-telefono">
+              <h4>Teléfono:</h4>
+              <p>+54 9 11 3180-2792</p>
             </div>
+            <div class="footer-horario">
+              <h4>Horarios de atención:</h4>
+              <p>Lunes a Viernes de 8:00 - 18:00</p>
+              <p>Sabados 10:00 14:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"
+            ><img src="Facebook.png" alt="Facebook"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="Instagram.png" alt="Instagram"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="Tik-Tok.png" alt="TikTok"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 848 CARS. Todos los derechos reservados.</p>
+      </div>
         </footer>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+        </script>
     </body>
 </html>
+
