@@ -1,4 +1,6 @@
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -7,6 +9,9 @@ body{
     font-family: monospace;
     background-color: #c9c9c9;
     overflow-x: hidden;
+}
+a{
+    text-decoration: none;
 }
 div, ul, nav, header, footer, a, li, label, body{
     margin: 0;
@@ -124,43 +129,112 @@ header{
 
 /* ---  PRESENTACION START   --- */
 
-.presentacion-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.12fr 1fr;
-    justify-content: center;
-    background-color: #646464;
-    max-width: 100%;
-    overflow-x: hidden;
+.swiper {
+    width: 100%;
+    height: 810px;
 }
-.presentacion-titulo{
-    grid-column: 1/span 3;
-    justify-self: center;
-    font-size: 25px;
-    padding: 15px;
-}
-.presentacion-parrafo{
-    font-size: 25px;
-    color: #000000;
-    padding: 12px;
-}
-.presentacion-img-container{
+.container{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-height: 700px;
-    overflow: hidden;
-    padding: 12px;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
-.presentacion-img{
+.slide-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    width: 320px;
-    border-radius: 30px;
+    height: 100%;
+    z-index: -1;
 }
-h1{
+.slide-bg img{
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+    object-position: center; 
+}
+.slide-content{
+    width: 100%;
+    max-width: 650px;
+}
+.slide-content-subtitle{
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+.slide-content-title{
+    font-size: 4rem;
+    font-weight: 900;
     color: #812926;
-    letter-spacing: 3px;
+    text-align: justify;
+
 }
+.button{
+    padding: 1rem 2rem;
+    background-color: #812926;
+    border-radius: 1rem;
+    color: #fff;
+    display: inline-block;
+    transition: color 0ms, all 300ms;
+}
+.button:hover{
+    padding: 1rem 2.5rem;
+}
+/* slider active */
+.slide-content-subtitle,
+.slide-content-title,
+.slide-content-subtitle,
+.slide-content-text,
+.slide-content-butom{
+    transition: 900ms;
+    opacity: 0;
+    transform: translateX(-300px);
+}
+.slide-bg{
+    transform: all 900ms;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.swiper-slide-active, .slide-bg{
+    opacity: 1;
+    transform: translateY(0);
+}
+.swiper-slide-active, .slide-content-subtitle{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 300ms;
+}
+.swiper-slide-active, .slide-content-title{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 700ms;
+}
+.swiper-slide-active, .slide-content-text{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 900ms;
+}
+.swiper-slide-active, .slide-content-butom{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1100ms;
+}
+/* pagination */
+.swiper-horizontal > .swiper-pagination{
+    bottom: 25px;
+}
+.swiper-pagination-bullet-active{
+    width: 40px;
+    border-radius: 10px;
+    
+}
+
+
 .seccion-accion{
     background-color: #270c0b;
     color: #fff;
@@ -211,10 +285,10 @@ h1{
     z-index: 1;
 }
 .compra{
-    background-image:  linear-gradient(#0000,#000c, #0000), url(./compra.jpeg);
+    background-image:  linear-gradient(#0000,#000c, #0000), url(compra.jpeg);
 }
 .venta{
-    background-image:  linear-gradient(#0000,#000c, #0000), url(./vende.jpeg);
+    background-image:  linear-gradient(#0000,#000c, #0000), url(vende.jpeg);
 }
 .whatsapp-button {
     position: fixed;
@@ -232,6 +306,7 @@ h1{
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease;
+    z-index: 100;
 }
 .whatsapp-button img {
     width: 40px;
